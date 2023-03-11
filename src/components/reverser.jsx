@@ -23,6 +23,8 @@ class Reverser extends Component {
     render() { 
 
         return ( 
+          <div>
+            <h1 className='text-center'>Mahmud Accounting Service</h1>
             <div className="container p-5"  >
                 <form className="form-inline">
                     <div className="form-group mx-sm-3 mb-2">
@@ -38,14 +40,14 @@ class Reverser extends Component {
                 </form>
                 
                 <div className ="card" style={{width: "18rem"}}>
+                  <img class="card-img-right" src={this.state.pic_url} alt="Card image cap" />
                   <div className ="card-body">
                     <h5 className ="card-title">Your Name</h5>
                     <p className ="card-text">{this.state.reverseNum?this.state.reverseNum:""}</p>
                   </div>
                 </div>
-
-
             </div>
+          </div>
 
          );
     }
