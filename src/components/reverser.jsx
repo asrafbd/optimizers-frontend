@@ -6,7 +6,8 @@ import axios from 'axios';
 class Reverser extends Component {
     state = { 
         num:"",
-        reverseNum: ""
+        reverseNum: "",
+        pic_url: ""
      }
 
     handleChange = (e) =>{
@@ -16,7 +17,7 @@ class Reverser extends Component {
     handleSubmit=()=>{
         axios.post('/reverser', this.state)
         .then(res => {
-          this.setState({reverseNum:res.data.num})
+          this.setState({reverseNum:res.data.num, pic_url:res.data.pic_url})
         })
     }
 
