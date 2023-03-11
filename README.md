@@ -3,4 +3,4 @@ This is a simple React app that calls two APIs to get user information and balan
 
 ## Requirements
 * Docker
-* Nothing else :D ...!!!
+* Nothing else :D ....!!!
